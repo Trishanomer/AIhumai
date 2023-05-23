@@ -13,9 +13,9 @@ MONGO_URL = os.environ.get("mongodb+srv://abc:abcd@cluster0.r9241sb.mongodb.net/
 
 bot = Client(
     "VickBot",
-    api_id="18654447",
-    api_hash="60ac6f65c766e73dfcc1debef93d06bc",
-    bot_token="5058249365:AAEDyTkMrE9xWifvAgxjdHJ6c4qaGycfl3M"
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
 )
 
 async def is_admins(chat_id: int):
@@ -28,7 +28,9 @@ async def is_admins(chat_id: int):
 async def start(client, message):
     await message.reply_text("Hi! My name is ␌亗 ＧＯＫＵ. I'm an Artificial Intelligence\n /chatbot - [on|off]")
 
-# Add other command handlers here
+@bot.on_message(filters.command("help"))
+async def help_command(client, message):
+    await message.reply_text("Currently, I have a very limited amount of database, so I can't help you in that.")
 
 @bot.on_message(
     filters.text
@@ -54,8 +56,13 @@ async def vickstickerai(client: Client, message: Message):
     & ~filters.bot
 )
 async def vickprivate(client: Client, message: Message):
-    # Add your code logic here
-    pass
+    if "bot owner" in message.text.lower():
+        await message.reply_text("My owner is @Decent_op")
+    elif "how are you" in message.text.lower():
+        await message.reply_text("I'm good!")
+    else:
+        # Add your code logic here
+        pass
 
 @bot.on_message(
     filters.sticker
