@@ -37,15 +37,16 @@ async def start(client, message):
 )
 async def vickai(client: Client, message: Message):
     # Add your code logic here
-    
-    @bot.on_message(
+    pass
+
+@bot.on_message(
     filters.sticker
     & ~filters.private
     & ~filters.bot
 )
 async def vickstickerai(client: Client, message: Message):
     # Add your code logic here
-
+    pass
 
 @bot.on_message(
     filters.text
@@ -54,6 +55,7 @@ async def vickstickerai(client: Client, message: Message):
 )
 async def vickprivate(client: Client, message: Message):
     # Add your code logic here
+    pass
 
 @bot.on_message(
     filters.sticker
@@ -62,5 +64,6 @@ async def vickprivate(client: Client, message: Message):
 )
 async def vickprivatesticker(client: Client, message: Message):
     # Add your code logic here
+    pass
 
 bot.run()
