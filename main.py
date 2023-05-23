@@ -13,9 +13,9 @@ MONGO_URL = os.environ.get("mongodb+srv://abc:abcd@cluster0.r9241sb.mongodb.net/
 
 bot = Client(
     "VickBot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN
+    api_id="18654447",
+    api_hash="60ac6f65c766e73dfcc1debef93d06bc",
+    bot_token="mongodb+srv://abc:abcd@cluster0.r9241sb.mongodb.net/?retryWrites=true&w=majority"
 )
 
 async def is_admins(chat_id: int):
