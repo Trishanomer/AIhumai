@@ -15,7 +15,7 @@ bot = Client(
     "VickBot",
     api_id=18654447,
     api_hash=60ac6f65c766e73dfcc1debef93d06bc,
-    bot_token=5058249365:AAEDyTkMrE9xWifvAgxjdHJ6c4qaGycfl3M
+    bot_token=5058249365:AAEDyTkMrE9xWifvAgxjdHJ6c4qaGycfl3M,
 )
 
 async def is_admins(chat_id: int):
