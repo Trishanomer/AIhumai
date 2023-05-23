@@ -46,6 +46,7 @@ async def vickai(client: Client, message: Message):
 async def vickstickerai(client: Client, message: Message):
     # Add your code logic here
 
+
 @bot.on_message(
     filters.text
     & filters.private
