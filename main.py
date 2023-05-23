@@ -6,10 +6,10 @@ import random
 import os
 import re
 
-API_ID = os.environ.get("API_ID", None)
-API_HASH = os.environ.get("API_HASH", None)
-BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
-MONGO_URL = os.environ.get("MONGO_URL", None)
+API_ID = os.environ.get("18654447", None)
+API_HASH = os.environ.get("60ac6f65c766e73dfcc1debef93d06bc", None)
+BOT_TOKEN = os.environ.get("5058249365:AAEDyTkMrE9xWifvAgxjdHJ6c4qaGycfl3M", None)
+MONGO_URL = os.environ.get("mongodb+srv://abc:abcd@cluster0.r9241sb.mongodb.net/?retryWrites=true&w=majority", None)
 
 bot = Client(
     "VickBot",
